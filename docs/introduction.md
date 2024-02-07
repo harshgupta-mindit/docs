@@ -3,6 +3,6 @@ title: Introduction
 sidebar_position: 1
 ---
 
-# First Doc
+# Shaad API Documentation
 
 This is first doc line.
