@@ -18,7 +18,7 @@ Request body should consist of these attributes mentioned in below table.
 ### Admin/Shaad - Request Query 
 | Attribute | Type | Required | Minimum Value | Maximum
 | ---- | ---- | --------- | -------- | --------
-| `distributor_commission` | decimal(2,2) | false | 1 | - 
+| `commission` | decimal(2,2) | false | 1 | - 
 | `is_active` | number | false | 1 | -
 
 ### Distributor - Request Query 

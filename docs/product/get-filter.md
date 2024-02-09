@@ -1,7 +1,7 @@
 
 import Note from "@site/src/components/Note.js";
 
-# Get/Filter Products
+# Filter Products
 
 ## Definition
 Product Get api is created to Fetch products from "product" table.
@@ -18,18 +18,19 @@ Request query should consist of these key-value pairs mentioned in below table.
 | ---- | ---- | --------- | -------- | --------
 | `product_no` | string | false | 1 | - 
 | `name` | string | false | 1 | -
-| `product_price` | decimal(10,2) | false | 1 | -
+| `base_price` | decimal(10,2) | false | 1 | -
 | `carrier_id` | number | false | 1 | -
 | `country_id` | number | false | 1 | -
-| `distributor_commission` | decimal(10,2) | false | 1 | -
+| `commission` | decimal(10,2) | false | 1 | -
 | `is_active` | number | false | 1 | -
 
 ### Distributor - Request Query 
 | Attribute | Type | Required | Minimum Value | Maximum
 | ---- | ---- | --------- | -------- | --------
+| `account_no` | number | false | 1 | - 
 | `product_no` | string | false | 1 | - 
 | `name` | string | false | 1 | -
-| `product_price` | decimal(10,2) | false | 1 | -
+| `base_price` | decimal(10,2) | false | 1 | -
 | `carrier_id` | number | false | 1 | -
 | `country_id` | number | false | 1 | -
 | `updatedAt` | date(YYYY-MM-DD - YYYY-MM-DD) | false | 1 | -

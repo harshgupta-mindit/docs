@@ -16,11 +16,11 @@ Request body should consist of these attributes mentioned in below table.
 | Attribute | Type | Required | Minimum Value | Maximum
 | ---- | ---- | --------- | -------- | --------
 | `name` | string | true | 1 | - 
-| `product_description` | string | true | 1 | -
+| `description` | string | true | 1 | -
 | `base_price` | number | true | 1 | -
 | `carrier_id` | number | true | 1 | -
 | `country_id` | number | true | 1 | -
-| `distributor_commission` | decimal(2,2) | true | 1 | -
+| `commission` | decimal(2,2) | true | 1 | -
 
 
 ## Response Body
