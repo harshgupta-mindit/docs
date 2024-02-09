@@ -6,7 +6,7 @@ import Note from "@site/src/components/Note.js";
 ## Definition
 Commission History Get api is created to Fetch Commission History for all user from "commission_history" table.
 
-**ENDPOINT** - `GET - /commission-history`
+**ENDPOINT** - `GET - /products/commission-history`
 
 <Note>Get Commission History API is only made for Admin/Shaad, Distributor, Retailer and can only access by the same user authority in roleId.</Note>
 

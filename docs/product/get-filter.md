@@ -6,7 +6,7 @@ import Note from "@site/src/components/Note.js";
 ## Definition
 Product Get api is created to Fetch products from "product" table.
 
-**ENDPOINT** - `GET - /product`
+**ENDPOINT** - `GET - /products`
 
 <Note>Get Product API is only made for Admin/Shaad, Distributor, Retailer and can only access by the same user authority in roleId.</Note>
 

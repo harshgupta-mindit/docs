@@ -6,7 +6,7 @@ import Note from "@site/src/components/Note.js";
 ## Definition
 Product add api is created to add products in "product" table.
 
-**ENDPOINT** - `POST - /product`
+**ENDPOINT** - `POST - /products`
 
 <Note>Add Product API is only made for Admin/Shaad and can only access by the same user authority in roleId.</Note>
 
