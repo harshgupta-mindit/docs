@@ -15,20 +15,20 @@ Request body should consist of these attributes mentioned in below table.
 
 <Note>`product_id` value in params is required for `PUT - /product` for all user roles.</Note>
 
-### Admin/Shaad - Request Query 
+### Admin/Shaad - Request Body 
 | Attribute | Type | Required | Minimum Value | Maximum
 | ---- | ---- | --------- | -------- | --------
 | `commission` | decimal(2,2) | false | 1 | - 
 | `is_active` | number | false | 1 | -
 
-### Distributor - Request Query 
+### Distributor - Request Body 
 | Attribute | Type | Required | Minimum Value | Maximum
 | ---- | ---- | --------- | -------- | --------
 | `recommended_commission` | decimal(2,2) | true | 1 | - 
 | `final_commission` | decimal(2,2) | true | 1 | -
 | `retailer_id` | number | true | 1 | -
 
-### Retailer - Request Query 
+### Retailer - Request Body 
 | Attribute | Type | Required | Minimum Value | Maximum
 | ---- | ---- | --------- | -------- | --------
 | `recommended_commission` | decimal(2,2) | true | 1 | - 
@@ -42,7 +42,7 @@ Request body should consist of these attributes mentioned in below table.
 ```js
 { 
     success: true,
-    message: "Product Added successfully"
+    message: "Product Updated successfully"
 }
 
 ```
@@ -55,7 +55,7 @@ Request body should consist of these attributes mentioned in below table.
     message: error.message,
 }
 ```
-
+## `Developer - Harsh`
 
 
 

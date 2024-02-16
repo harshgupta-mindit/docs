@@ -221,6 +221,4 @@ Request query should consist of these key-value pairs mentioned in below table.
 }
 ```
 
-
-
-
+## `Developer - Harsh`
