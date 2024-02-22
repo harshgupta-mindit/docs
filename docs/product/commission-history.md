@@ -22,7 +22,7 @@ Request query has not effect on this get request.
 | Attribute | Type | Required | Minimum Value | Maximum
 | ---- | ---- | --------- | -------- | --------
 | `product_id` | number | true | 1 | - 
-| `retailer_id` | number | true | 1 | - 
+| `account_no` | number | true | 1 | - 
 
 ### Retailer - Request Query 
 | Attribute | Type | Required | Minimum Value | Maximum
