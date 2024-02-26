@@ -6,7 +6,7 @@ import Note from "@site/src/components/Note.js";
 ## Definition
 Commission History Get api is created to Fetch Commission History for all user from "commission_history" table.
 
-**ENDPOINT** Distributor - `GET - /products/:id/account-no/:account_no/commission-history`
+**ENDPOINT** Distributor - `GET - /:id/accounts/:account_no/commission-history`
 <br/>
 **ENDPOINT** Admin/Retailer - `GET - /products/:id/commission-history`
 
