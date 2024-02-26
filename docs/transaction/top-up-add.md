@@ -1,14 +1,14 @@
 
 import Note from "@site/src/components/Note.js";
 
-# Add Topup
+# Add Credit
 
 ## Definition
-Topup add api is created to add Topups in "topup_transaction" table.
+Credit add api is created to add Topups in "credit_transaction" table.
 
-**ENDPOINT** - `POST - /topups`
+**ENDPOINT** - `POST - /transactions/`
 
-<Note>Add Topup API is only made for Admin/Distributor and can only access by the same user authority in roleId.</Note>
+<Note>Add Credit API is only made for Admin/Distributor and can only access by the same user authority in roleId.</Note>
 
 ## Request Structure
 
@@ -34,7 +34,7 @@ Request body should consist of these attributes mentioned in below table.
 ```js
 { 
     success: true,
-    message: "Transaction done successfully"
+    message: "Credit transaction done successfully"
 }
 
 ```
