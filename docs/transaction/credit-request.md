@@ -1,7 +1,7 @@
 
 import Note from "@site/src/components/Note.js";
 
-# Request Credit*
+# Request Credit
 
 ## Definition
 Credit request api is created to request Topups in "credit_transaction" table.
@@ -12,19 +12,17 @@ Credit request api is created to request Topups in "credit_transaction" table.
 
 ## Request Structure
 
-### Request Body - Admin
-Request body should consist of these attributes mentioned in below table.
-| Attribute | Type | Required | Minimum Value | Maximum
-| ---- | ---- | --------- | -------- | --------
-| `amount` | string | true | 1 | - 
-| `account_no` | string | true | 1 | -
-
 ### Request Body - Distributor
 Request body should consist of these attributes mentioned in below table.
 | Attribute | Type | Required | Minimum Value | Maximum
 | ---- | ---- | --------- | -------- | --------
-| `amount` | string | true | 1 | - 
-| `account_no` | string | true | 1 | -
+| `amount` | number | true | 1 | - 
+
+### Request Body - Retailer
+Request body should consist of these attributes mentioned in below table.
+| Attribute | Type | Required | Minimum Value | Maximum
+| ---- | ---- | --------- | -------- | --------
+| `amount` | number | true | 1 | - 
 
 
 ## Response Structure
@@ -34,7 +32,7 @@ Request body should consist of these attributes mentioned in below table.
 ```js
 { 
     success: true,
-    message: "Credit transaction done successfully"
+    message: "Credit request done successfully"
 }
 
 ```
