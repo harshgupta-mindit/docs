@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Note = ({children}) => {
+const Note = ({backgroundColor, color, children}) => {
   return (
-    <div style={{backgroundColor: "#fef3c7", padding: "5px", margin: "10px", borderRadius:"10px"}}>
+    <div style={{backgroundColor: (backgroundColor ? backgroundColor : "#fef3c7"), color:(color ? color : "black"), padding: "5px", margin: "10px", borderRadius:"10px"}}>
         <b>Note : </b>{children}
     </div>
   )

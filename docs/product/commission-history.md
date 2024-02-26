@@ -6,28 +6,32 @@ import Note from "@site/src/components/Note.js";
 ## Definition
 Commission History Get api is created to Fetch Commission History for all user from "commission_history" table.
 
-**ENDPOINT** - `GET - /products/commission-history`
+**ENDPOINT** Distributor - `GET - /products/:id/account-no/:account_no/commission-history`
+<br/>
+**ENDPOINT** Admin/Retailer - `GET - /products/:id/commission-history`
 
-<Note>Get Commission History API is only made for Admin/Shaad, Distributor, Retailer and can only access by the same user authority in roleId.</Note>
+<Note backgroundColor="yellow" color="black">Get Commission History API is only made for Admin/Shaad, Distributor, Retailer and can only access by the same user authority in roleId.</Note>
+
+<Note backgroundColor="green" color="white">":id" = product id of the product and ":account_no" is the account number of specific user.</Note>
 
 ## Request Query
 Request query has not effect on this get request.
 
-### Admin/Shaad - Request Query 
+### Admin/Shaad - Request Params 
 | Attribute | Type | Required | Minimum Value | Maximum
 | ---- | ---- | --------- | -------- | --------
-| `product_id` | number | true | 1 | - 
+| `id(product Id)` | number | true | 1 | - 
 
-### Distributor - Request Query 
+### Distributor - Request Params 
 | Attribute | Type | Required | Minimum Value | Maximum
 | ---- | ---- | --------- | -------- | --------
-| `product_id` | number | true | 1 | - 
+| `id(product Id)` | number | true | 1 | - 
 | `account_no` | number | true | 1 | - 
 
-### Retailer - Request Query 
+### Retailer - Request Params 
 | Attribute | Type | Required | Minimum Value | Maximum
 | ---- | ---- | --------- | -------- | --------
-| `product_id` | number | true | 1 | - 
+| `id(product Id)` | number | true | 1 | - 
 
 
 ## Response Body
