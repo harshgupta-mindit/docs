@@ -5,7 +5,7 @@ import Note from "@site/src/components/Note.js";
 
 ## Definition
 User add api is created to add any users within shaad in "Users" table.
-<Note color="yellow">Admin cannot be created.</Note>
+<Note backgroundColor="#FF6A4A">Admin cannot be created.</Note>
 
 **ENDPOINT** - `POST - /users`
 
@@ -26,6 +26,8 @@ Request body should consist of these attributes mentioned in below table.
 | `zip` | number | true | 1 | -
 | `phone_number` | number | true | 1 | -
 | `phone_code` | number | true | 1 | -
+| `credit_limit` | decimal(10,4) | true | 1 | -
+| `billing_type_id` | number | true | 1 | -
 
 
 ## Response Body
