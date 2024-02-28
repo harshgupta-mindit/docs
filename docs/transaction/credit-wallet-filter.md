@@ -35,7 +35,7 @@ Request query should consist of these key-value pairs mentioned in below table.
 
 ## Response Body
 
-### Request Full-filed for Distributor/Distributor User
+### Request Full-filed for Distributor
 #### Request Full-filled
 
 ```js
