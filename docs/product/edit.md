@@ -6,7 +6,7 @@ import Note from "@site/src/components/Note.js";
 ## Definition
 Product Edit api is created to Edit products in "product" table.
 
-**ENDPOINT** - `Put - /products`
+**ENDPOINT** - `Put - /products/:id`
 
 <Note>Edit Product API is only made for Admin/Shaad, Distributor, Retailer and can only access by the same user authority in roleId.</Note>
 

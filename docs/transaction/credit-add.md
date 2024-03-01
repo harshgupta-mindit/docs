@@ -6,7 +6,7 @@ import Note from "@site/src/components/Note.js";
 ## Definition
 Credit add api is created to add Topups in "credit_transaction" table.
 
-**ENDPOINT** - `POST - /transactions/credit`
+**ENDPOINT** - `POST - /transactions`
 
 <Note>Add Credit API is only made for Admin/Distributor and can only access by the same user authority in roleId.</Note>
 

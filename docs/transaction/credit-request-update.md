@@ -6,7 +6,7 @@ import Note from "@site/src/components/Note.js";
 ## Definition
 Update Credit Request api is created to update credit type status in "credit_transaction" table.
 
-**ENDPOINT** - `POST - /transactions/credit/request/:id`
+**ENDPOINT** - `PUT - /transactions/request/:id`
 
 <Note>Update Credit Request API is only made for Admin/Distributor and can only access by the same user authority in roleId.</Note>
 <Note backgroundColor="#9FFF4A">"/:id" is the unique `transaction_id`</Note>

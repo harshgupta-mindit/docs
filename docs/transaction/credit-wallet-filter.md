@@ -6,7 +6,7 @@ import Note from "@site/src/components/Note.js";
 ## Definition
 Credit/Wallet Get api is created to Fetch credit/wallet transaction from "credit_transactions" table.
 
-**ENDPOINT** - `GET - /transactions/credit`
+**ENDPOINT** - `GET - /transactions`
 
 <Note>Get Credit/Wallet API is only made for Admin/Distributor/Retailer and can only access by the same user authority in roleId.</Note>
 
@@ -18,19 +18,47 @@ Request query should consist of these key-value pairs mentioned in below table.
 | ---- | ---- | --------- | -------- | --------
 | `type` | string | true | `credited_by` | - 
 | `billing_type_id` | number | true | 1 or 2 | -
+| `transaction_id` | string | false | 1 | -
+| `account_no` | string | false | 1 | -
+| `credit_status_type_id` | number | false | 1 | -
+| `name` | string | false | 1 | -
+| `amount` | number | false | 1 | -
+| `request_date` | date(YYYY-MM-DD - YYYY-MM-DD) | false | 1 | -
+| `credit_date` | date(YYYY-MM-DD - YYYY-MM-DD) | false | 1 | -
+| `due_date` | date(YYYY-MM-DD - YYYY-MM-DD) | false | 1 | -
+| `payment_date` | date(YYYY-MM-DD - YYYY-MM-DD) | false | 1 | -
+
 
 ### Distributor - Request Query 
 | Attribute | Type | Required | Minimum Value | Maximum
 | ---- | ---- | --------- | -------- | --------
 | `type` | string | true | `credited_to`/`credited_by` | - 
-| `billing_type_id` | number | true | 1 or 2 | - 
+| `billing_type_id` | number | true | 1 or 2 | -
+| `transaction_id` | string | false | 1 | -
+| `account_no` | string | false | 1 | -
+| `credit_status_type_id` | number | false | 1 | -
+| `name` | string | false | 1 | -
+| `amount` | number | false | 1 | -
+| `request_date` | date(YYYY-MM-DD - YYYY-MM-DD) | false | 1 | -
+| `credit_date` | date(YYYY-MM-DD - YYYY-MM-DD) | false | 1 | -
+| `due_date` | date(YYYY-MM-DD - YYYY-MM-DD) | false | 1 | -
+| `payment_date` | date(YYYY-MM-DD - YYYY-MM-DD) | false | 1 | -
 
 
 ### Retailer - Request Query 
 | Attribute | Type | Required | Minimum Value | Maximum
 | ---- | ---- | --------- | -------- | --------
 | `type` | string | true | `credited_to`| - 
-| `billing_type_id` | number | true | 1 or 2| - 
+| `billing_type_id` | number | true | 1 or 2 | -
+| `transaction_id` | string | false | 1 | -
+| `account_no` | string | false | 1 | -
+| `credit_status_type_id` | number | false | 1 | -
+| `name` | string | false | 1 | -
+| `amount` | number | false | 1 | -
+| `request_date` | date(YYYY-MM-DD - YYYY-MM-DD) | false | 1 | -
+| `credit_date` | date(YYYY-MM-DD - YYYY-MM-DD) | false | 1 | -
+| `due_date` | date(YYYY-MM-DD - YYYY-MM-DD) | false | 1 | -
+| `payment_date` | date(YYYY-MM-DD - YYYY-MM-DD) | false | 1 | -
 
 
 ## Response Body

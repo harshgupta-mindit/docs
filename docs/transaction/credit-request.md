@@ -6,7 +6,7 @@ import Note from "@site/src/components/Note.js";
 ## Definition
 Credit request api is created to request Topups in "credit_transaction" table.
 
-**ENDPOINT** - `POST - /transactions/credit/request`
+**ENDPOINT** - `POST - /transactions/request`
 
 <Note>Request Credit API is only made for Distributor/Retailer and can only access by the same user authority in roleId.</Note>
 
